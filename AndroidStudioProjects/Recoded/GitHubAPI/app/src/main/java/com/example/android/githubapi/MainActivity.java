@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         setListeners();
 
+
     }
 
     private void setListeners() {

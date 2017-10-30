@@ -40,7 +40,7 @@ public class SearchAsyncTask extends AsyncTaskLoader<String> {
                 httpURLConnection.connect();
 
                 inputStream = httpURLConnection.getInputStream();
-                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+                InputStreamReader inputStreamReader = new InputStreamReader(inputStream, "utf-8");
 
                 BufferedReader reader = new BufferedReader(inputStreamReader);
                 String line = reader.readLine();
